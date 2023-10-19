@@ -50,6 +50,7 @@ nav {
     cursor: pointer;
     transition: box-shadow .4s ease , background-color .2s ease-out;
     background-color: var(--text-color2);
+    border-radius: 10px;
 }
 
 .logo-header a{
@@ -125,15 +126,8 @@ span.material-symbols-outlined {
 .login {
     border-radius: 20px 20px 20px 20px;
     transition: box-shadow .4s ease, background-color .4s ease;
-    box-shadow: 2px 2px 0 0 rgb(0, 0, 0) , 6px 6px 0 0 var(--text-color2);
-    background-color: var(--text-color1);
+    background-color: var(--text-color2);
     color: var(--base-color);
-    border: 2px solid var(--text-color2);
-}
-
-.login:hover {
-    transform: translate(-1px, -1px);
-    box-shadow: 3px 3px 2px 0 rgb(0, 0, 0), 6px 6px 0 0 var(--text-color2);
 }
 
 .download_link{
