@@ -16,13 +16,18 @@ Array.from(inputs).forEach((input) => {
     }
 
     if (value === "=") {
-      try {
-        string = eval(string);
-        display.value = string;
-      } catch (error) {
-        alert("Invalid expression");
-        string = "";
-        display.value = string;
+      if (string) {
+        // Check if there is a value
+        try {
+          string = eval(string);
+          display.value = string;
+        } catch (error) {
+          alert("Invalid expression");
+          string = "";
+          display.value = string;
+        }
+      } else {
+        alert("Please enter a value before using the equals sign.");
       }
     } else if (value === "AC") {
       string = "";
